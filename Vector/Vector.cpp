@@ -28,8 +28,8 @@ Vector<T> & Vector<T>::operator=(const Vector<T> &v){
 	delete[] m_pArray;
 	m_size = v.m_size;
 	m_capacity = v.m_capacity;
-	m_pArray = new T[size];
-	for(int i =0; i<size; i++)
+	m_pArray = new T[m_size];
+	for(int i =0; i<m_size; i++)
 		m_pArray[i] = v.m_pArray[i];
 	return *this;
 }
@@ -54,7 +54,7 @@ T& Vector<T>::front()
 template<class T>
 T& Vector<T>::back()
 {
-    return m_pArray[size - 1];
+    return m_pArray[m_size - 1];
 }
 
 template<class T>
