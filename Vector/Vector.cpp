@@ -72,7 +72,7 @@ void Vector<T>::pop_back()
 }
 
 template<class T>
-unsigned int Vector<T>::size()const//
+unsigned int Vector<T>::size()const
 {
     return m_size;
 }
@@ -114,9 +114,8 @@ Vector<T>::~Vector()
 
 int main()
 {  
-
    Vector<int> v;
-
+   
    v.reserve(2);
    assert(v.capacity() == 2);
 

@@ -2,6 +2,7 @@
 #include<cassert>
 #include<algorithm>
 #include<string>
+#include<thread>
 using namespace std;
 template <class T>
 class Vector{
